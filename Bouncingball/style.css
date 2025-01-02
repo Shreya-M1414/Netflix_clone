@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.ball{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #FF5722;
+}
+@keyframes smoothbounceball {
+    from{
+        transform: translate3d(0,200px,100px);
+    }
+    to{
+        transform: translate3d(0,200px,100px);
+    }
+    
+}
+.ball{
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.ball{
+    animation: bounce 0.9s cubic-bezier(0.5,0.05,1,0.5);
+}
